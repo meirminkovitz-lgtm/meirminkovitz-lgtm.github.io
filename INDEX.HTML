@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניצוץ - מרכז תוכן יהודי</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800">
+                <a href="#">ניצוץ</a>
+            </div>
+            <div class="hidden md:flex space-x-8 space-x-reverse text-lg">
+                <a href="#zmanim" class="text-gray-700 hover:text-blue-600">זמנים</a>
+                <a href="shiurim-library.html" class="text-gray-700 hover:text-blue-600">שיעורים</a>
+                <a href="chavruta-form.html" class="text-gray-700 hover:text-blue-600">חברותא</a>
+                <a href="#updates" class="text-gray-700 hover:text-blue-600">עדכונים</a>
+                <a href="#footer" class="text-gray-700 hover:text-blue-600">אודות</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-[60vh] flex items-center justify-center text-white text-center relative" style="background-image: url('https://i.imgur.com/MBRfdkk.png');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">ניצוץ של משמעות, בכל יום</h1>
+                <p class="text-xl md:text-2xl mt-4 max-w-3xl mx-auto">מקום מפגש לתוכן יהודי, לוח שנה עדכני, קהילה וחדשות.</p>
+            </div>
+        </section>
+
+        <!-- Zmanim Section -->
+        <section id="zmanim" class="bg-white py-12 -mt-16 relative z-10 container mx-auto rounded-xl shadow-xl">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-6">
+                    <h2 id="parsha-title" class="text-2xl font-bold text-gray-800">זמני היום לירושלים</h2>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div>
+                        <p class="text-lg text-gray-600">כניסת שבת</p>
+                        <p id="shabbat-entry" class="text-2xl font-bold text-blue-800">--:--</p>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-600">צאת שבת</p>
+                        <p id="shabbat-exit" class="text-2xl font-bold text-blue-800">--:--</p>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-600">הנץ החמה</p>
+                        <p id="netz" class="text-2xl font-bold text-blue-800">--:--</p>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-600">שקיעת החמה</p>
+                        <p id="shkia" class="text-2xl font-bold text-blue-800">--:--</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Shiurim -->
+        <section class="bg-gray-50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900">שיעורים אחרונים</h2>
+                    <p class="text-lg text-gray-600 mt-2">מבחר שיעורים מעוררי מחשבה מרבנים מובילים</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Shiur Card 1 -->
+                    <a href="shiur-player.html" class="block bg-white rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2070&auto=format&fit=crop" alt="ספרייה עם ספרים רבים">
+                        <div class="p-6">
+                            <p class="text-sm text-blue-600 font-semibold mb-1">הרב רפאל גריינימן</p>
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">מבנים לוגיים בסוגיות הגמרא</h3>
+                            <p class="text-gray-700">צלילה לעומק החשיבה התלמודית וניתוח אנליטי של סוגיות מורכבות.</p>
+                        </div>
+                    </a>
+                    <!-- Shiur Card 2 -->
+                    <a href="shiur-player.html" class="block bg-white rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                        <img class="w-full h-56 object-cover" src="https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="כדור הארץ מהחלל">
+                        <div class="p-6">
+                            <p class="text-sm text-purple-600 font-semibold mb-1">הרב מרדכי נויגרשל</p>
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">תורה ומדע: האם יש סתירה?</h3>
+                            <p class="text-gray-700">הרצאה הבוחנת את המפגש בין תגליות מדעיות למקורות היהדות.</p>
+                        </div>
+                    </a>
+                    <!-- Shiur Card 3 -->
+                    <a href="shiur-player.html" class="block bg-white rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1974&auto=format&fit=crop" alt="אדם מהרהר מול חלון">
+                        <div class="p-6">
+                            <p class="text-sm text-teal-600 font-semibold mb-1">הרב ישראל זקס</p>
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">עבודת המידות: מסע פנימי</h3>
+                            <p class="text-gray-700">כלים מעשיים מתוך עולם המוסר לפיתוח מודעות עצמית ותיקון המידות.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="shiurim-library.html" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">לכל השיעורים</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Inspiration -->
+        <section class="bg-blue-800 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">פינת ההתבוננות היומית</h2>
+                <p class="text-xl max-w-2xl mx-auto text-blue-200">"כל זמן שאדם הולך בדרך ישר, הקדוש ברוך הוא מזמן לו הצלחה בכל מעשיו." (הבעל שם טוב)</p>
+            </div>
+        </section>
+
+        <!-- Chavruta Call to Action -->
+        <section id="chavruta" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="bg-blue-50 border-t-4 border-blue-500 rounded-lg p-8 max-w-3xl mx-auto shadow-md">
+                    <h2 class="text-3xl font-bold text-blue-800 mb-4">רוצים לקחת את הלימוד צעד קדימה?</h2>
+                    <p class="text-blue-900 mb-6 text-lg leading-relaxed">לימוד בחברותא הוא הדרך העוצמתית ביותר להתפתח. לחצו על הכפתור, השאירו פרטים, והרב ישראל זקס ייצור עמכם קשר לתיאום חברותא עם אברך בעל ידע רב, המותאמת בדיוק עבורכם.</p>
+                    <a href="chavruta-form.html" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 inline-block text-lg">אני רוצה לתאם חברותא</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events & News -->
+        <section id="updates" class="bg-gray-50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <!-- Events Column -->
+                    <div class="lg:col-span-2">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">אירועים ועדכונים</h2>
+                        <div class="space-y-8">
+                            <!-- Event 1 -->
+                            <a href="event-details.html" class="block md:flex items-center bg-white rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                                <img class="w-full md:w-1/3 h-48 md:h-full object-cover" src="https://images.pexels.com/photos/1672338/pexels-photo-1672338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="הקפות שניות">
+                                <div class="p-6">
+                                    <p class="text-sm text-red-600 font-semibold mb-1">אירוע קהילתי</p>
+                                    <h3 class="text-2xl font-bold mb-2 text-gray-900">הקפות שניות ברוב עם</h3>
+                                    <p class="text-gray-700">מוצאי שמחת תורה | 20:30 | רחבת בית הכנסת המרכזי</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- News Column -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">חדשות יהודיות</h2>
+                        <div class="space-y-4">
+                            <a href="#" class="block bg-white p-4 rounded-lg shadow hover:bg-gray-100 transition">
+                                <h3 class="font-bold text-gray-900">תגלית ארכיאולוגית נדירה מימי בית שני</h3>
+                                <p class="text-sm text-gray-600">כל הפרטים והתאריכים בפנים &raquo;</p>
+                            </a>
+                            <a href="#" class="block bg-white p-4 rounded-lg shadow hover:bg-gray-100 transition">
+                                <h3 class="font-bold text-gray-900">קהילות בעולם מתכוננות לחגים</h3>
+                                <p class="text-sm text-gray-600">צפו בקטעי וידאו ותמונות מהאירוע &raquo;</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-800 text-white">
+       <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ניצוץ</h3>
+                    <p class="text-gray-400">מקום מפגש לתוכן יהודי, לוח שנה עדכני, קהילה וחדשות. ניצוץ של משמעות, בכל יום.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">קישורים מהירים</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#zmanim" class="hover:text-blue-400 transition">זמני היום</a></li>
+                        <li><a href="shiurim-library.html" class="hover:text-blue-400 transition">ספריית השיעורים</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">תרומות</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">צרו קשר</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">הישארו מחוברים</h3>
+                    <p class="text-gray-400 mb-4">הירשמו וקבלו עדכון שבועי עם מיטב התכנים.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="האימייל שלך" class="px-4 py-2 w-full rounded-r-lg text-gray-800 focus:outline-none" />
+                        <button class="bg-blue-600 text-white font-bold px-4 py-2 rounded-l-lg hover:bg-blue-700">שלח</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 כל הזכויות שמורות למרכז ניצוץ. פותח באהבה על ידי "בונה אתרים".</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function formatTime(isoString) {
+                if (!isoString) return '--:--';
+                const date = new Date(isoString);
+                return date.toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jerusalem' });
+            }
+
+            // --- Fetch Daily Zmanim (Netz and Shkia) FIRST ---
+            const zmanimApiUrl = 'https://www.hebcal.com/zmanim?cfg=json&geonameid=281184';
+            fetch(zmanimApiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for Zmanim data');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.times) {
+                        document.getElementById('netz').textContent = formatTime(data.times.netz);
+                        document.getElementById('shkia').textContent = formatTime(data.times.shkia);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching Zmanim data:', error);
+                    document.getElementById('netz').textContent = 'שגיאה';
+                    document.getElementById('shkia').textContent = 'שגיאה';
+                });
+
+            // --- THEN Fetch Shabbat and Parsha Data ---
+            const shabbatApiUrl = 'https://www.hebcal.com/shabbat?cfg=json&geonameid=281184&m=50&a=on';
+            fetch(shabbatApiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok for Shabbat data');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const parshaItem = data.items.find(item => item.category === 'parashat');
+                    const candlesItem = data.items.find(item => item.category === 'candles');
+                    const havdalahItem = data.items.find(item => item.category === 'havdalah');
+
+                    if (parshaItem && candlesItem) {
+                        const parshaTitle = parshaItem.hebrew;
+                        const shabbatDate = new Date(candlesItem.date).toLocaleDateString('he-IL', { day: 'numeric', month: 'long' });
+                        document.getElementById('parsha-title').textContent = `${parshaTitle} | ${shabbatDate}`;
+                    }
+
+                    document.getElementById('shabbat-entry').textContent = formatTime(candlesItem?.date) || '--:--';
+                    document.getElementById('shabbat-exit').textContent = formatTime(havdalahItem?.date) || '--:--';
+                })
+                .catch(error => {
+                    console.error('Error fetching Shabbat data:', error);
+                    // Do not overwrite the main title on shabbat data failure
+                    document.getElementById('shabbat-entry').textContent = 'שגיאה';
+                    document.getElementById('shabbat-exit').textContent = 'שגיאה';
+                });
+        });
+    </script>
+</body>
+</html>
+
